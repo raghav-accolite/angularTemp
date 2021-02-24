@@ -1,0 +1,25 @@
+<h1>This is the binding example.</h1>
+<input type="text" ng-model="firstname">
+<p>The above written text is <span ng-bind="firstname"></span> </p>
+
+<form>
+    Pick a topic:
+    <input type="radio" ng-model="myVar" value="dogs">Dogs
+    <input type="radio" ng-model="myVar" value="tuts">Tutorials
+    <input type="radio" ng-model="myVar" value="cars">Cars
+  </form>
+  
+<div ng-switch="myVar">
+    <div ng-switch-when="dogs">
+       <h1>Dogs</h1>
+       <p>Welcome to a world of dogs.</p>
+    </div>
+    <div ng-switch-when="tuts">
+       <h1>Tutorials</h1>
+       <p>Learn from examples.</p>
+    </div>
+    <div ng-switch-when="cars">
+       <h1>Cars</h1>
+       <p>Read about cars.</p>
+    </div>
+  </div>

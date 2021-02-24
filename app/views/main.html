@@ -1,0 +1,14 @@
+<div class="jumbotron">
+  <h1>'Allo, 'Allo!</h1>
+  <p class="lead">
+    <img src="images/yeoman.png" alt="I'm Yeoman"><br>
+    Below is the news list fetched from newsapi.org
+  </p>
+  </div>
+
+<div class="row marketing" ng-repeat="news in newsList">
+  <h4>{{news.title}}</h4>
+  <p>
+    {{news.description}}
+  </p>
+</div>
